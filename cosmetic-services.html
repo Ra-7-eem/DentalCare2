@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="تعرفي على الخدمات التجميلية اللاجراحية في عيادة د. أسماء، بما في ذلك جلسات البوتوكس، إبر النضارة، وعلاجات تجديد شباب البشرة لنتائج طبيعية تدوم طويلاً.">
+    <title>قسم الخدمات التجميلية | عيادة د. أسماء</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./media/favicon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css?v=2.0">
+</head>
+
+<body>
+    <header class="hero-section" style="min-height: 40vh; padding-top: 4rem; display: flex; align-items: center; justify-content: center; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <div class="background-pattern">
+            <div class="floating-shape circle-1"></div>
+            <div class="floating-shape circle-2"></div>
+            <div class="floating-shape line-1"></div>
+            <div class="floating-shape line-2"></div>
+            <div class="floating-shape dots-1"></div>
+            <div class="floating-shape dots-2"></div>
+        </div>
+
+        <div class="container" style="flex-direction: column; justify-content: center; gap: 1rem;">
+            <a href="index.html" class="btn btn-secondary" style="align-self: flex-start; margin-bottom: 1rem; border-radius: 30px; padding: 0.5rem 1.5rem; font-size: 1rem;">
+                <i class="fas fa-home"></i> العودة للرئيسية
+            </a>
+            <div class="badge" style="margin-bottom: 1rem; color: var(--accent-color); border-color: var(--accent-color); background: transparent;">
+                <i class="fas fa-magic"></i> خدماتنا
+            </div>
+            <h1 class="main-title" style="margin-bottom: 1rem;">قسم الخدمات التجميلية</h1>
+            <p class="description" style="max-width: 700px; margin: 0 auto;">
+                اكتشفي جمالك الحقيقي مع خدماتنا التجميلية اللاجراحية التي تمنحك إشراقة طبيعية ونتائج تدوم طويلاً.
+            </p>
+        </div>
+    </header>
+
+    <section class="services-page-content" style="padding: 5rem 0; position: relative;">
+        <div class="background-pattern">
+            <div class="floating-shape circle-1"></div>
+            <div class="floating-shape circle-2"></div>
+        </div>
+        <div class="container" style="z-index: 2; position: relative;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; width: 100%;">
+                
+                <div class="service-card" style="height: 100%; margin: 0;">
+                    <div class="service-icon-tab"><i class="fas fa-magic"></i></div>
+                    <h4 class="service-title">جلسة بوتوكس</h4>
+                    <img src="./media/services/cosmetic-services/Botox.jpeg" alt="جلسة بوتوكس" class="service-image" loading="lazy">
+                    <p class="service-desc">علاج فعّال لتقليل التجاعيد الدقيقة والخطوط التعبيرية للحصول على بشرة شابة ومشدودة.</p>
+                    <button class="btn-learn-more" onclick="openServiceModal(this)">أعرف المزيد</button>
+                    <div class="service-modal-data" style="display: none;">
+                        <div class="data-title">جلسة بوتوكس ثلاث مناطق</div>
+                        <div class="data-price">900 شيكل</div>
+                        <div class="data-details"></div>
+                    </div>
+                </div>
+
+                <div class="service-card" style="height: 100%; margin: 0;">
+                    <div class="service-icon-tab"><i class="fas fa-syringe"></i></div>
+                    <h4 class="service-title">إبرة نضارة RRS</h4>
+                    <img src="./media/services/cosmetic-services/RRS.jpeg" alt="ابرة نضارة RRS long lasting" class="service-image" loading="lazy">
+                    <p class="service-desc">إبرة نضارة (Long Lasting) لترطيب عميق وتجديد حيوية البشرة وشدها بفعالية وتأثير يدوم.</p>
+                    <button class="btn-learn-more" onclick="openServiceModal(this)">أعرف المزيد</button>
+                    <div class="service-modal-data" style="display: none;">
+                        <div class="data-title">إبرة نضارة RRS (Long Lasting) / Lola</div>
+                        <div class="data-price">1000 شيكل</div>
+                        <div class="data-details">
+                            <ul>
+                                <li>ترطيب عميق وتحسين مستوى رطوبة البشرة.</li>
+                                <li>تحسين نعومة وملمس البشرة.</li>
+                                <li>تعزيز مرونة الجلد ومظهره الحيوي.</li>
+                                <li>تحفيز البشرة ودعم إنتاج الكولاجين.</li>
+                                <li>المساعدة على تقليل مظهر الخطوط الدقيقة.</li>
+                                <li>تحسين مظهر البشرة المجهدة والباهتة.</li>
+                                <li>تمنح البشرة مظهراً أكثر نضارة وامتلاءً بشكل طبيعي.</li>
+                                <li>مناسبة للوجه والرقبة بحسب تقييم الطبيب.</li>
+                            </ul>
+                            <div class="modal-ingredients"><strong>المكونات الأساسية:</strong> حمض الهيالورونيك ومكونات داعمة لترطيب وتجديد البشرة، بحسب نوع المنتج المستخدم.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" style="height: 100%; margin: 0;">
+                    <div class="service-icon-tab"><i class="fas fa-leaf"></i></div>
+                    <h4 class="service-title">Jalupro Superhydro</h4>
+                    <div style="display: flex; gap: 0.5rem; width: 100%;">
+                        <img src="./media/services/cosmetic-services/jalupro.jpeg" alt="jalupro superhydro" class="service-image" loading="lazy" style="flex: 1; width: 50%; min-width: 0;">
+                        <img src="./media/services/cosmetic-services/jalupro2.jpeg" alt="jalupro superhydro 2" class="service-image" loading="lazy" style="flex: 1; width: 50%; min-width: 0;">
+                    </div>
+                    <p class="service-desc">إبرة نضارة مبتكرة لتحفيز إنتاج الكولاجين الطبيعي، لشد ورفع ملامح الوجه وتجديد شبابها.</p>
+                    <button class="btn-learn-more" onclick="openServiceModal(this)">أعرف المزيد</button>
+                    <div class="service-modal-data" style="display: none;">
+                        <div class="data-title">جلسة النضارة — Jalupro Superhydro</div>
+                        <div class="data-price">السعر الحالي 1000 شيكل <s style="margin-right: 0.5rem;">1200 شيكل</s></div>
+                        <div class="data-details">
+                            <ul>
+                                <li>تحفيز إنتاج الكولاجين ودعم تجدد البشرة.</li>
+                                <li>تحسين ترطيب البشرة من الداخل.</li>
+                                <li>تحسين مرونة الجلد ومظهره العام.</li>
+                                <li>تقليل مظهر الخطوط الدقيقة.</li>
+                                <li>تحسين ملمس البشرة ونعومتها.</li>
+                                <li>المساعدة على استعادة نضارة وحيوية البشرة.</li>
+                                <li>تمنح البشرة مظهراً أكثر إشراقاً وشباباً.</li>
+                            </ul>
+                            <div class="modal-ingredients"><strong>التركيبة:</strong> حمض الهيالورونيك + مجموعة من الأحماض الأمينية، بحسب تركيبة Jalupro المستخدمة.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" style="height: 100%; margin: 0;">
+                    <div class="service-icon-tab"><i class="fas fa-dna"></i></div>
+                    <h4 class="service-title">إبرة Vitaran i</h4>
+                    <img src="./media/services/cosmetic-services/salmon%20DNA.jpeg" alt="Vitaran DNA salmon" class="service-image" loading="lazy">
+                    <p class="service-desc">إبرة DNA Salmon المتطورة لتحفيز التجدد الخلوي وترميم الأنسجة لصفاء ونضارة فائقة.</p>
+                    <button class="btn-learn-more" onclick="openServiceModal(this)">أعرف المزيد</button>
+                    <div class="service-modal-data" style="display: none;">
+                        <div class="data-title">Vitaran i — منطقة تحت العين</div>
+                        <div class="data-price">700 شيكل</div>
+                        <div class="data-details">
+                            <ul>
+                                <li>تحسين مظهر الهالات السوداء.</li>
+                                <li>تقليل مظهر التعب والإرهاق حول العينين.</li>
+                                <li>تحسين مرونة الجلد في منطقة تحت العين.</li>
+                                <li>المساعدة على تنعيم الخطوط الدقيقة.</li>
+                                <li>ترطيب وتحسين جودة الجلد.</li>
+                                <li>تحسين مظهر التجويف والجلد الرقيق حول العين.</li>
+                                <li>منح منطقة تحت العين مظهراً أكثر نضارة وحيوية.</li>
+                            </ul>
+                            <div class="modal-ingredients"><strong>المادة الأساسية:</strong> Polynucleotides (PN) المستخدمة لدعم تجدد وتحسين جودة البشرة.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" style="height: 100%; margin: 0;">
+                    <div class="service-icon-tab"><i class="fas fa-eye"></i></div>
+                    <h4 class="service-title">ابرة علاج الهالات تحت العين <br> jalupro Young eye</h4>
+                    <img src="./media/services/cosmetic-services/vitaran.jpeg" alt="vitaran i" class="service-image" loading="lazy">
+                    <p class="service-desc">مخصصة لعلاج الهالات السوداء والخطوط الرفيعة حول العينين لاستعادة النضارة والإشراق.</p>
+                    <button class="btn-learn-more" onclick="openServiceModal(this)">أعرف المزيد</button>
+                    <div class="service-modal-data" style="display: none;">
+                        <div class="data-title">ابرة علاج الهالات تحت العين Jalupro Young Eye</div>
+                        <div class="data-price">السعر الحالي 900 شيكل <s style="margin-right: 0.5rem;">1100 شيكل</s></div>
+                        <div class="data-details"></div>
+                    </div>
+                </div>
+
+                <div class="service-card" style="height: 100%; margin: 0;">
+                    <div class="service-icon-tab"><i class="fas fa-tint"></i></div>
+                    <h4 class="service-title">إبرة ترطيب الشفايف</h4>
+                    <img src="./media/services/cosmetic-services/Lip%20moisturizing%20needle.jpeg" alt="إبرة ترطيب الشفايف" class="service-image" loading="lazy">
+                    <p class="service-desc">إبرة مخصصة لترطيب الشفاه بعمق وتوريدها، لمنحها مظهراً صحياً وجذاباً يدوم طويلاً.</p>
+                    <button class="btn-learn-more" onclick="openServiceModal(this)">أعرف المزيد</button>
+                    <div class="service-modal-data" style="display: none;">
+                        <div class="data-title">إبرة ترطيب وتجميل الشفاه</div>
+                        <div class="data-price">600 شيكل</div>
+                        <div class="data-details">
+                            <ul>
+                                <li>ترطيب عميق وتحسين جفاف الشفاه.</li>
+                                <li>تحسين نعومة وملمس الشفاه.</li>
+                                <li>منح الشفاه مظهراً أكثر حيوية ونضارة.</li>
+                                <li>تحسين الخطوط الدقيقة في منطقة الشفاه.</li>
+                                <li>تعزيز الامتلاء الطبيعي بشكل خفيف.</li>
+                                <li>تحسين تحديد ومظهر الشفاه دون تغيير مبالغ فيه في الشكل.</li>
+                                <li>المساعدة على استعادة مظهر الشفاه الصحي والمرطب.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="booking-section" style="padding: 4rem 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container" style="flex-direction: column;">
+            <h2 class="section-title" style="margin-bottom: 1.5rem;">جاهز للحصول على إطلالة مشرقة؟</h2>
+            <a href="index.html#booking" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 3rem;">
+                <i class="far fa-calendar-check"></i> احجز موعدك الآن
+            </a>
+        </div>
+    </section>
+
+    <!-- Pre-Footer Contact Section -->
+    <section class="pre-footer-contact">
+        <div class="background-pattern">
+            <div class="floating-shape circle-1"></div>
+            <div class="floating-shape circle-2"></div>
+            <div class="floating-shape line-1"></div>
+            <div class="floating-shape dots-1"></div>
+            <i class="fas fa-star floating-shape" style="top: 20%; left: 10%; color: var(--accent-color); font-size: 2rem; opacity: 0.2; animation: float 6s ease-in-out infinite;"></i>
+            <i class="fas fa-star floating-shape" style="bottom: 20%; right: 15%; color: var(--accent-color); font-size: 1.5rem; opacity: 0.3; animation: float 4s ease-in-out infinite reverse;"></i>
+        </div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="pre-footer-content-wrap">
+                <div class="contact-box">
+                    <div class="icon-wrap"><i class="fas fa-phone-alt"></i></div>
+                    <h4>تواصل مع عيادة دكتور أسماء من هنا</h4>
+                    <p class="contact-address">0569208261</p>
+                    <a href="tel:+972569208261" dir="ltr" class="action-button call-btn">
+                        <i class="fas fa-phone"></i> اتصال مباشر
+                    </a>
+                </div>
+                <div class="divider"></div>
+                <div class="contact-box">
+                    <div class="icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+                    <h4>تعرف على موقع عيادة دكتور أسماء من هنا</h4>
+                    <p class="contact-address">بيرزيت - شارع المرج الرئيسي - بجانب مشاوي الاماني</p>
+                    <a href="https://www.google.com/maps?q=31.959022521972656,35.18757629394531&z=17&hl=en" target="_blank" class="action-button gps-btn">
+                        <i class="fas fa-map-marked-alt"></i> فتح الموقع عبر الـ GPS
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h3 class="footer-logo">Dr. ASMA</h3>
+                <p class="footer-text">نقدم لك رعاية أسنان استثنائية باستخدام أحدث التقنيات لضمان حصولك على ابتسامة صحية وجميلة تدوم مدى الحياة.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1Eb4f1CteM/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/asmaakirresh?utm_source=qr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">روابط سريعة</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#about">من نحن</a></li>
+                    <li><a href="index.html#services">خدماتنا</a></li>
+                    <li><a href="index.html#booking">احجز موعدك</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة &copy; 2026 لعيادة د. أسماء للأسنان</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/972569208261" target="_blank" class="floating-whatsapp" aria-label="تواصل معنا عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js?v=2.0"></script>
+</body>
+</html>
